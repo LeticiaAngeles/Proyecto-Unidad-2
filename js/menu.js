@@ -1,6 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var userName = localStorage.getItem('userName');
-    if (userName) {
-        document.getElementById('nombre').textContent = userName;
+    const nombreDisplay = document.getElementById('nombre');
+
+    // Obtener el valor desde localStorage y mostrarlo en la página
+    const savedName = localStorage.getItem('firstName');
+    if (nombreDisplay && savedName) {
+        nombreDisplay.textContent = savedName;
     }
 });

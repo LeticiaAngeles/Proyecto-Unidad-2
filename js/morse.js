@@ -1,11 +1,12 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const userName = localStorage.getItem('userName');
-    if (userName) {
-        const nombreElemento = document.getElementById('nombre');
-        if (nombreElemento) {
-            nombreElemento.textContent = userName;
-        }
+document.addEventListener('DOMContentLoaded', function() {
+    const nombreDisplay = document.getElementById('nombre');
+
+    // Obtener el valor desde localStorage y mostrarlo en la página
+    const savedName = localStorage.getItem('firstName');
+    if (nombreDisplay && savedName) {
+        nombreDisplay.textContent = savedName;
     }
+});
 
     // Obtener el botón con id 'autoridades'
     let botonAutoridades = document.getElementById('autoridades');
@@ -75,4 +76,4 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-});
+

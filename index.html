@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Iniciar Sesión</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&family=Julius+Sans+One&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="varela-round-regular">CodeSOS: Estamos para ayudarte </h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2 class="varela-round-regular">Ingresa tus datos</h2>
+            <img src="https://propulsorio.com/wp-content/uploads/2021/08/GUIA-U2.png" alt="Imagen de ejemplo"
+                class="imagen-mediana" width="300px">
+            <form id="loginForm" action="menu.html" method="get">
+                <label for="firstName" class="varela-round-regular">Nombres:</label>
+                <input type="text" id="firstName" name="firstName" class="text-input varela-round-regular" required>
+
+                <label for="lastName" class="varela-round-regular">Apellidos:</label>
+                <input type="text" id="lastName" name="lastName" class="text-input varela-round-regular" required>
+
+                <label for="phoneNumber" class="varela-round-regular">Número de Teléfono:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" class="text-input varela-round-regular"
+                    pattern="[0-9]{9}" placeholder="999 999 999" required>
+
+                <div class="checkbox-container">
+                    <input type="checkbox" id="rememberMe" name="rememberMe" autocomplete="off">
+                    <label for="rememberMe" class="varela-round-regular">Recordar Nombre</label>
+                </div>
+
+                <button type="submit" id="submitBtn">Iniciar Sesión</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p class="varela-round-regular">© 2024 Piksel Seonguja - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script type="module" src="js/script.js"></script>
+    <script type="module" src="js/morse.js"></script>
+</body>
+
+</html>

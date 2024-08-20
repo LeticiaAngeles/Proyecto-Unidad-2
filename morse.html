@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Código Morse</title>
+    <link rel="stylesheet" href="css/morse.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&family=Julius+Sans+One&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navegacion-principal" aria-label="Navegación principal">
+            <h1 id="titulo-sitio">CodeSOS</h1>
+            <ul>
+                <li><a href="index.html">Registro</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="codigos.html">Instructivo</a></li>
+                <li><a href="morse.html">Encriptador morse</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido-principal" class="contenedor-principal">
+        <h2 class="saludo">Estás segura, <span id="nombre"></span>🌸</h2>
+        <h2 class="frase">"Estamos aquí para ayudarte. Si necesitas asistencia, envía tu mensaje y estaremos encantadas
+            de ayudarte"</h2>
+        <section id="convertidor-morse" class="seccion-morse">
+            <div class="contenedor-morse">
+                <h1 id="titulo-convertir">Convertir texto a</h1>
+                <h1 id="titulo-codigo">Código Morse</h1>
+                <label id="subtitulo-codigo">¿Qué es lo que deseas decir?</label>
+                <textarea id="entrada-texto" rows="4" cols="50" class="textarea-entrada"></textarea>
+                <br><br>
+                <button id="boton-convertir">Convertir</button>
+
+                <h2 id="titulo-resultado">Resultado:</h2>
+                <textarea id="texto-resultado" rows="4" cols="50" class="textarea-resultado" readonly></textarea>
+            </div>
+        </section>
+        <button id="autoridades">Enviar a las autoridades</button>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Piksel Seounguja. Todos los derechos reservados.</p>
+            <p>Diseñado por Piksel Seounguja</p>
+        </div>
+    </footer>
+
+    <div class="cursor-personalizado"></div>
+    <script src="js/morse.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,424 @@
+ /* NO TOCAR */
+ /* Estilo general del cuerpo de la página */
+ body {
+    font-family: 'Varela Round', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #EB0056;
+    color: white;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+/* Estilo del contenedor de la barra de navegación */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Estilo para el título de la barra de navegación */
+nav h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Estilo para la lista del menú de navegación */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Estilo para los elementos de la lista */
+nav ul li {
+    margin: 0 15px;
+}
+
+/* Estilo para los enlaces de navegación */
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+nav a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #b3f2ff;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+nav a:hover {
+    color: #ffd6d6;
+}
+
+nav a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+nav a:focus {
+    color: #ff9999;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
+
+/* PARTE 1 NO TOCAR */
+/* Estilo para el contenedor principal */
+.contenido {
+    display: flex;
+    justify-content: space-between;
+    /* Espacio entre las columnas */
+    margin: 20px 0;
+}
+
+/* Estilo para las columnas */
+.columna {
+    flex: 1;
+    /* Ocupa el mismo espacio en la fila */
+    margin-right: 20px;
+    /* Espacio entre columnas */
+}
+
+.columna:last-child {
+    margin-right: 0;
+    /* Elimina el margen derecho en la última columna */
+}
+
+/* Estilo para los subtítulos */
+.columna h2 {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 24px;
+    white-space: nowrap;
+    /* Evita que el subtítulo se divida en varias líneas */
+    margin: 0 0 10px 0;
+}
+
+/* Estilo para el contenedor de texto e imagen */
+.texto-imagen {
+    display: flex;
+    align-items: flex-start;
+    /* Alinea la imagen y el texto en la parte superior */
+    gap: 20px;
+    /* Espacio entre la imagen y el texto */
+}
+
+/* Estilo para las imágenes */
+.texto-imagen img {
+    max-width: 300px;
+    border-radius: 10px;
+    vertical-align: top;
+    /* Alinea la imagen con la parte superior del texto */
+}
+
+/* Estilo para el texto */
+.texto-imagen .contexto {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin: 0;
+}
+
+/*NO TOCAR*/
+.seccion-encriptacion {
+   padding: 20px;
+   background-color: #f9f9f9; /* Color de fondo para la sección */
+}
+
+.info-encriptacion {
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.descripcion {
+   display: flex;
+   align-items: stretch; /* Alinea la imagen y el texto para que tengan la misma altura */
+   gap: 20px; /* Espacio entre el texto y la imagen */
+}
+
+.texto-box {
+   background-color: #ffffff;
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+   flex: 1;
+   /* Ajusta la altura para que coincida con la imagen */
+   min-height: 315px; /* Debe coincidir con la altura mínima de la imagen */
+   box-sizing: border-box; /* Incluye el padding en el tamaño total del contenedor */
+}
+
+.texto-box h2 {
+   font-family: 'Varela Round', sans-serif;
+   font-size: 24px;
+   white-space: nowrap; /* Evita que el subtítulo se divida en varias líneas */
+   margin: 0 0 10px 0;
+}
+
+.texto-box p {
+   font-family: 'Varela Round', sans-serif;
+   font-size: 16px;
+   line-height: 1.6;
+   margin-bottom: 15px;
+}
+
+#imagen-encriptacion {
+   width: 450px; /* Ajusta al 100% del contenedor disponible */
+   height: 450px; /* Mantiene la relación de aspecto de la imagen */
+   border-radius: 10px; /* Bordes redondeados */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+   min-height: 315px; /* Ajusta según la altura del texto-box */
+   object-fit: cover; /* Asegura que la imagen cubra el área del contenedor */
+}
+
+
+/* TABLA 1 NO TOCAR */
+/* Estilo para el contenedor de la tabla */
+.tabla-encriptacion {
+    margin: 20px 0;
+}
+
+/* Estilo para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+/* Estilo para las celdas de la tabla */
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+/* Estilo para las filas de la tabla */
+tr {
+    background-color: #dedede;
+    /* Color de fondo uniforme para todas las filas */
+}
+
+/* Estilo para las cabeceras de la tabla */
+th {
+    background-color: #EB0056;
+    color: white;
+}
+
+
+/* NO TOCAR SIMETRICA Y ASIMETRICA */
+
+.encryption-methods {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 columnas en la fila superior */
+    gap: 20px;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-items: center;
+    /* Centra los elementos en sus celdas */
+}
+
+.method {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /* Organiza el contenido verticalmente */
+    align-items: center;
+    /* Centra los elementos horizontalmente */
+    gap: 10px;
+    /* Espacio entre el contenido */
+    width: 100%;
+    /* Ocupa el 100% del ancho de su celda */
+    max-width: 300px;
+    /* Asegura que los elementos no ocupen más de 300px de ancho */
+    box-sizing: border-box;
+    /* Incluye el padding y border en el ancho total del elemento */
+    text-align: center;
+    /* Centra el texto dentro de cada método */
+}
+
+.method-image {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Asegura que haya 4 elementos en la fila superior y 2 en la fila inferior */
+.encryption-methods:nth-of-type(1) {
+    grid-template-columns: repeat(4, 1fr);
+    /* Para encriptación simétrica */
+}
+
+.encryption-methods:nth-of-type(2) {
+    grid-template-columns: repeat(2, 1fr);
+    /* Para encriptación asimétrica */
+}
+
+
+/* IMPORTANCIA NO TOCAR */
+/* Asumiendo que ya tienes estilos para el body */
+
+.contenedor-principal {
+ display: flex;
+ flex-direction: column; /* Coloca las filas verticalmente */
+ gap: 20px; /* Espacio entre las filas */
+ align-items: center; /* Centra las filas horizontalmente */
+}
+
+.fila-horizontal {
+ display: flex;
+ gap: 20px; /* Espacio entre las cajas en la fila */
+ justify-content: center; /* Centra las cajas en la fila */
+ width: 100%; /* Ajusta el ancho de la fila */
+}
+
+.caja-datos {
+ flex: 1;
+ min-width: 300px; /* Ajusta el tamaño mínimo según sea necesario */
+ max-width: 45%; /* Ajusta el tamaño máximo según sea necesario */
+ padding: 20px;
+ border-radius: 8px;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ background-color: #EB0056; /* Ajusta el color de fondo según sea necesario */
+}
+
+.contenido-box {
+ font-size: 1em;
+ color: white;
+}
+
+ul {
+ list-style-type: disc;
+ padding-left: 20px;
+}
+
+h2 {
+ font-family: 'Varela Round', sans-serif;
+ font-size: 1.8em;
+ text-align: center;
+ margin-bottom: 20px;
+}
+
+/* Opcional: estilos para las imágenes si las incluyes */
+.imagen {
+ max-width: 100%;
+ height: auto;
+ display: block;
+ margin: 0 auto;
+}
+
+
+/* NO TOCAR */
+section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+section table,
+section th,
+section td {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    text-align: left;
+}
+
+section th {
+    background-color: #EB0056;
+    color: white;
+}
+
+section tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+/* FOOTER NO TOCAR */
+
+
+footer {
+    background-color: #EB0056;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: auto;
+    /* Mueve el footer al final de la página */
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Estilo para la scrollbar en navegadores WebKit */
+::-webkit-scrollbar {
+    width: 12px; /* Ancho de la scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f9f9f9; /* Color del área de la scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #EB0056; /* Color del pulgar de la scrollbar */
+    border-radius: 10px; /* Bordes redondeados del pulgar */
+    border: 3px solid #f9f9f9; /* Borde alrededor del pulgar */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #EB0056; /* Color del pulgar cuando se pasa el ratón sobre él */
+}
+
+
+
